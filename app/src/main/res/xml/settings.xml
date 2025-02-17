@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/pref_set_title">
+        <ListPreference
+            android:title="@string/pref_option_title"
+            android:key="@string/pref_option_key"
+            android:entries="@array/pref_option_entries"
+            android:entryValues="@array/pref_option_values"
+            android:defaultValue="@string/pref_option_default"
+            android:dialogTitle="@string/pref_option_title"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

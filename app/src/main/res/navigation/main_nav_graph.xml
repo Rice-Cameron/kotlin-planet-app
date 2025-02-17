@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/fragment_planet">
+
+    <fragment
+        android:id="@+id/fragment_planet"
+        android:name="edu.oregonstate.cs492.final_project_team_20.ui.PlanetFragment"
+        android:label="@string/planets">
+        <action
+            android:id="@+id/navigate_to_details"
+            app:destination="@id/fragment_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_details"
+        android:name="edu.oregonstate.cs492.final_project_team_20.ui.DetailsFragment"
+        android:label="@string/planet_details" >
+        <argument
+            android:name="planet_name"
+            app:argType="string"
+            android:defaultValue="Mercury" />
+        <action
+            android:id="@+id/navigate_to_home"
+            app:destination="@id/fragment_planet" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/settings"
+        android:label="Settings"
+        android:name="edu.oregonstate.cs492.final_project_team_20.ui.SettingsFragment" />
+
+    <action
+        android:id="@+id/navigate_to_settings"
+        app:destination="@id/settings" />
+</navigation>

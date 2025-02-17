@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_option_entries">
+        <item>@string/pref_entry_option_dist</item>
+        <item>@string/pref_entry_option_temp</item>
+        <item>@string/pref_entry_option_mass</item>
+        <item>@string/pref_entry_option_axis</item>
+        <item>@string/pref_entry_option_period</item>
+    </string-array>
+    <string-array name="pref_option_values">
+        <item>@string/pref_val_option_dist</item>
+        <item>@string/pref_val_option_temp</item>
+        <item>@string/pref_val_option_mass</item>
+        <item>@string/pref_val_option_axis</item>
+        <item>@string/pref_val_option_period</item>
+    </string-array>
+</resources>

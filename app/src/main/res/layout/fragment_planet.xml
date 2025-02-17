@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/sun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sun"
+            android:layout_gravity="center"
+            android:paddingBottom="30dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/sun_description" />
+
+        <ImageView
+            android:id="@+id/mercury"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/mercury"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="onMercuryClicked"
+            android:contentDescription="@string/mercury_description" />
+
+
+        <ImageView
+            android:id="@+id/venus"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/venus"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="onVenusClicked"
+            android:contentDescription="@string/venus_description" />
+
+        <ImageView
+            android:id="@+id/earth"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/earth"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="onEarthClicked"
+            android:contentDescription="@string/earth_description" />
+
+        <ImageView
+            android:id="@+id/mars"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/mars"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="onMarsClicked"
+            android:contentDescription="@string/mars_description" />
+
+        <ImageView
+            android:id="@+id/asteroid"
+            android:layout_width="600dp"
+            android:layout_height="150dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/asteroid"
+            android:layout_gravity="center"
+            android:contentDescription="@string/asteroid_description" />
+
+        <ImageView
+            android:id="@+id/jupiter"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/jupiter"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="onJupiterClicked"
+            android:contentDescription="@string/jupiter_description" />
+
+        <ImageView
+            android:id="@+id/saturn"
+            android:layout_width="600dp"
+            android:layout_height="350dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/saturn"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="onSaturnClicked"
+            android:contentDescription="@string/saturn_description" />
+
+        <ImageView
+            android:id="@+id/uranus"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/uranus"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="onUranusClicked"
+            android:contentDescription="@string/uranus_description" />
+
+        <ImageView
+            android:id="@+id/neptune"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/neptune"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="onNeptuneClicked"
+            android:contentDescription="@string/neptune_description" />
+
+    </LinearLayout>
+</ScrollView>

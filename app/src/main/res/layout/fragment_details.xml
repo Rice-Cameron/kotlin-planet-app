@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".ui.DetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/planet_details">
+
+        <TextView
+            android:id="@+id/planet_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:layout_marginTop="64dp"
+            style="@style/DetailsPageText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/planet_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:gravity="center"
+            style="@style/DetailsPageText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/planet_name" />
+
+        <ImageView
+            android:id="@+id/planet_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/planet_data"
+            android:contentDescription="@string/planet_picture_alt" />
+
+        <!--   Image from: https://commons.wikimedia.org/wiki/File:YouTube_Silver_Play_Button.png    -->
+        <ImageButton
+            android:id="@+id/video_button"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:background="@drawable/play_button"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/planet_image"
+            android:contentDescription="@string/play_button" />
+
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/video_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_loading_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="?attr/colorError"
+            android:visibility="invisible"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

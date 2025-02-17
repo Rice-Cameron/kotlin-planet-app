@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/top_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/cardview_dark_background"
+            app:titleTextColor="@color/white"
+            android:theme="@style/ToolBarTheme"
+            style="?attr/toolbarStyle" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:navGraph="@navigation/main_nav_graph"
+            app:defaultNavHost="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/main"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".ui.MainActivity"-->
+<!--    android:fitsSystemWindows="true">-->
+
+<!--    &lt;!&ndash; Container for the fragment &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/fragment_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--        &lt;!&ndash; Include PlanetFragment directly within the layout &ndash;&gt;-->
+<!--&lt;!&ndash;        <androidx.fragment.app.FragmentContainerView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/planet_fragment"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:name="edu.oregonstate.cs492.final_project_team_20.ui.PlanetFragment"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="match_parent" />&ndash;&gt;-->
+<!--        <com.google.android.material.appbar.MaterialToolbar-->
+<!--            android:id="@+id/top_app_bar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:minHeight="?attr/actionBarSize"-->
+<!--            style="?attr/toolbarStyle"/>-->
+
+<!--        <androidx.fragment.app.FragmentContainerView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/nav_host_fragment"-->
+<!--            android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--            app:navGraph="@navigation/main_nav_graph"-->
+<!--            app:defaultNavHost="true" />-->
+
+
+<!--    </FrameLayout>-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
